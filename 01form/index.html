@@ -9,12 +9,12 @@
 <body>
     <h1>Commandez votre pizza</h1>
 
-    <form action="/01form/index.html" method="POST">
+    <form action="/01form/index.html" method="POST" enctype="multipart/form-data">
         <fieldset>
             <legend>Coordonnées</legend>
             <div>
                 <label for="nom-client">Nom</label>
-                <input name="nom" id="nom-client">
+                <input name="nom" id="nom-client" required>
             </div>
             <div>
                 <label for="adresse-client">Adresse</label>
@@ -27,6 +27,31 @@
             <div>
                 <label for="email-client">Email</label>
                 <input name="email" id="email-client" type="email">
+            </div>
+            <div>
+                <label for="numero-mobile-client">numéro de mobile</label>
+                <input name="numero-mobile" id="numero-mobile-client" type="text"
+                    pattern="0[67][0-9]{6}" placeholder="0612341234">
+            </div>
+            <div>
+                <label for="photo-maison">Une photo de votre entrée</label>
+                <input type="file" name="photo-maison" id="photo-maison" accept="image/*">
+            </div>
+            <div>
+                <label for="pays-client">Pays</label>
+                <select name="pays-client" id="pays-client" required>
+                    <option value="" selected disabled>Choisissez un pays</option>
+                    <optgroup label="Europe">
+                        <option value="FR">France</option>
+                        <option value="UK">Royaume-Uni</option>
+                        <option value="BE">Belgique</option>
+                        <option value="ES" disabled>Espagne</option>
+                    </optgroup>
+                    <optgroup label="Amérique du sud">
+                        <option value="AR">Argentine</option>
+                        <option value="CI">Chili</option>
+                    </optgroup>
+                </select>
             </div>
         </fieldset>
         <fieldset>
@@ -60,8 +85,30 @@
                     <option value="2">À domicile</option>
                 </select>
             </div>
+            <div>
+                <label for="scooter">scooter</label>
+                <input type="color" name="scooter" id="scooter">
+            </div>
+            <div>
+                <label for="date">Jour de livraison</label>
+                <input type="date" name="date" id="date">
+            </div>
+            <div>
+                <label for="taille">Taille de pizza</label>
+                <input type="range" name="taille" id="taille" min="8" max="36" step="4">
+            </div>
+            <div>
+                <label for="ville">Ville</label>
+                <input type="text" name="ville" id="ville" list="choix-villes">
+            </div>
         </fieldset>
         <button>Commander</button>
     </form>
+    <datalist id="choix-villes">
+        <option value="Nantes">
+        <option value="Nanterre">
+        <option value="Nancy">
+        <option value="Namurs">
+    </datalist>
 </body>
 </html>
