@@ -1,0 +1,8 @@
+html {
+    background-image: linear-gradient(to right, green, lightgreen 20%, white 20%, white 80%, pink 80%, red);
+}
+
+body {
+    max-width: 1280px;
+    margin: 0 auto;
+}

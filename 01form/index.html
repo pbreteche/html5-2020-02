@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chez Tonio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Commandez votre pizza</h1>
+
+    <form action="/01form/index.html" method="POST">
+        <fieldset>
+            <legend>Coordonnées</legend>
+            <div>
+                <label for="nom-client">Nom</label>
+                <input name="nom" id="nom-client">
+            </div>
+            <div>
+                <label for="adresse-client">Adresse</label>
+                <textarea name="adresse" id="adresse-client" cols="32" rows="4"></textarea>
+            </div>
+            <div>
+                <label for="tel-client">Téléphone</label>
+                <input name="tel" id="tel-client" type="tel">
+            </div>
+            <div>
+                <label for="email-client">Email</label>
+                <input name="email" id="email-client" type="email">
+            </div>
+        </fieldset>
+        <fieldset>
+            <div>
+                <p>Ingrédients:</p>
+                <div>
+                    <input type="checkbox" name="ingredient" id="ingredient-champi" value="champi">
+                    <label for="ingredient-champi">Champignon</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="ingredient" id="ingredient-olive" value="olive">
+                    <label for="ingredient-olive">Olives noires</label>
+                </div>
+            </div>
+            <div>
+                <p>Type:</p>
+                <div>
+                    <input type="radio" name="type" id="type-tomate" value="tomate">
+                    <label for="type-tomate">Tomate</label>
+                </div>
+                <div>
+                    <input type="radio" name="type" id="type-creme" value="creme">
+                    <label for="type-creme">Crème fraîche</label>
+                </div>
+            </div>
+            <div>
+                <label for="livraison">Livraison</label>
+                <select name="livraison" id="livraison">
+                    <option value="0">Sur place</option>
+                    <option value="1">À emporter</option>
+                    <option value="2">À domicile</option>
+                </select>
+            </div>
+        </fieldset>
+        <button>Commander</button>
+    </form>
+</body>
+</html>
