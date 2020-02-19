@@ -39,3 +39,17 @@ header > :first-child {
 header > :last-child {
     margin-bottom: 0;
 }
+
+.product {
+    border: solid .25em rgb(32, 32, 32);
+}
+
+.product figure,
+.product p {
+    display: inline-block;
+    width: 50%;
+}
+
+.product figure {
+    margin: 0;
+}
