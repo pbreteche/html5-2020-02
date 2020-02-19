@@ -46,7 +46,8 @@ header > :last-child {
 
 .product figure,
 .product p {
-    display: inline-block;
+    display: table-cell;
+    vertical-align: top;
     width: 50%;
 }
 
