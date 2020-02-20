@@ -1,0 +1,17 @@
+.balle-rouge {
+    height: 20px;
+    width: 20px;
+    background: red;
+    border-radius: 50%;
+    animation: tourne 3s linear infinite;
+}
+
+@keyframes tourne {
+    from {
+        transform: rotate(0) translateX(25px);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(25px);
+    }
+}
