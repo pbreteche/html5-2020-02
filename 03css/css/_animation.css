@@ -1,9 +1,19 @@
 .balle-rouge {
     height: 20px;
     width: 20px;
-    background: red;
+    background-image: radial-gradient(circle at 40% 40%, pink, red 50%);
     border-radius: 50%;
     animation: tourne 3s linear infinite;
+}
+
+.k2000 {
+    height: 40px;
+    width: 12px;
+    background: red;
+    box-shadow: 0 0 20px 5px white, 0 0 10px red;
+    border-radius: 5px;
+    margin: 50px auto;
+    animation: aller-retour 4s linear infinite;
 }
 
 @keyframes tourne {
@@ -13,5 +23,31 @@
 
     to {
         transform: rotate(360deg) translateX(25px);
+    }
+}
+
+@keyframes aller-retour {
+    0% {
+        transform: translate(0);
+        animation-timing-function: ease-out;
+    }
+
+    25% {
+        transform: scale(.5) translate(400px);
+        animation-timing-function: ease-in;
+    }
+
+    50% {
+        transform: translate(0);
+        animation-timing-function: ease-out;
+    }
+
+    75% {
+        transform: scale(.5) translate(-400px);
+        animation-timing-function: ease-in;
+    }
+
+    100% {
+        transform: translate(0);
     }
 }
