@@ -42,13 +42,17 @@ header > :last-child {
 
 .product {
     border: solid .25em rgb(32, 32, 32);
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.product h1 {
+    flex-basis: 100%
 }
 
 .product figure,
 .product p {
-    display: table-cell;
-    vertical-align: top;
-    width: 50%;
+    flex-basis: 50%;
 }
 
 .product figure {
