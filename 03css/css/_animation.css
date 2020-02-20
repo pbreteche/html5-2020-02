@@ -13,7 +13,7 @@
     box-shadow: 0 0 20px 5px white, 0 0 10px red;
     border-radius: 5px;
     margin: 50px auto;
-    animation: aller-retour 4s linear infinite;
+    animation: aller-retour 2s linear alternate infinite;
 }
 
 @keyframes tourne {
@@ -28,12 +28,7 @@
 
 @keyframes aller-retour {
     0% {
-        transform: translate(0);
-        animation-timing-function: ease-out;
-    }
-
-    25% {
-        transform: scale(.5) translate(400px);
+        transform: scale(.5) translate(-400px);
         animation-timing-function: ease-in;
     }
 
@@ -42,12 +37,7 @@
         animation-timing-function: ease-out;
     }
 
-    75% {
-        transform: scale(.5) translate(-400px);
-        animation-timing-function: ease-in;
-    }
-
     100% {
-        transform: translate(0);
+        transform: scale(.5) translate(400px);
     }
 }
