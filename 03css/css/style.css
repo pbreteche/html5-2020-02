@@ -58,3 +58,59 @@ header > :last-child {
 .product figure {
     margin: 0;
 }
+
+.menu {
+    display: flex;
+    background-color: rgb(32, 32, 32);
+    color: rgb(224, 224, 224);
+}
+
+.menu > div {
+    position: relative;
+}
+
+.menu button {
+    border: none;
+    font: 1em / 1.5 Trueno, sans-serif;
+    background-color: rgb(64, 64, 64);
+    color: rgb(224, 224, 224);
+    display: block;
+    width: 100%;
+    padding: .5em;
+    cursor: pointer;
+}
+
+.menu button:hover {
+    background-color: rgb(96, 96, 96);
+    text-decoration: underline;
+}
+
+.menu button:active {
+    box-shadow: .125em .125em .25em black inset;
+}
+
+.menu ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    position: absolute;
+    right: 0; left: 0; top: 2.5em;
+    display: none;
+}
+
+.menu :hover ul {
+    display: block;
+}
+
+.menu a {
+    color: rgb(224, 224, 224);
+    background-color: rgb(64, 64, 64);
+    text-decoration: none;
+    display: block;
+    padding: .5em;
+}
+
+.menu a:hover {
+    background-color: rgb(96, 96, 96);
+    text-decoration: underline;
+}
