@@ -1,0 +1,13 @@
+header {
+    background-color: #6fcc47;
+    font-size: 1.6em;
+    padding: 1em;
+}
+
+header > :first-child {
+    margin-top: 0;
+}
+
+header > :last-child {
+    margin-bottom: 0;
+}

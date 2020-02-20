@@ -1,0 +1,26 @@
+@font-face {
+    font-family: Trueno;
+    font-weight: 400;
+    src: url('../font/TruenoRg.otf') format('opentype');
+}
+
+@font-face {
+    font-family: Trueno;
+    font-weight: 600;
+    src: url('../font/TruenoBd.otf') format('opentype');
+}
+
+html {
+    font-family: Trueno, sans-serif;
+    color: #34DA7C;
+    color: rgb(32, 32, 32);
+}
+
+body {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+img, video, object, embed {
+    max-width: 100%;
+}
